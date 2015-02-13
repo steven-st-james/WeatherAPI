@@ -1,0 +1,16 @@
+<ion-view view-title="Dashboard">
+  <ion-content class="padding">
+    <div class="list card">
+      <div class="item item-divider"></div>
+      <div class="item item-body" ng-repeat="time in data.list">
+        <div>
+                {{time.temp.day | date:'short'}} <br />
+                <strong>{{time.weather[0].description | uppercase}}</strong><br />
+        </div>
+      </div>
+    </div>
+
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
